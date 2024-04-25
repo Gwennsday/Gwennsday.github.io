@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "FingerPaint";
+    src: url("/fonts/FingerPaint-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Black Italic";
+    src: url("/fonts/Roboto-BlackItalic.ttf") format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Black";
+    src: url("/fonts/Roboto-Black.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Bold";
+    src: url("/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Bold Italic";
+    src: url("/fonts/Roboto-BoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Condensed Bold Italic";
+    src: url("/fonts/Roboto-BoldCondensedItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Condensed Bold";
+    src: url("/fonts/Roboto-BoldCondensed.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Condensed";
+    src: url("/fonts/Roboto-Condensed.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Condensed Italic";
+    src: url("/fonts/Roboto-CondensedItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Light";
+    src: url("/fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Italic";
+    src: url("/fonts/Roboto-Italic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Medium Italic";
+    src: url("/fonts/Roboto-MediumItalic.ttf") format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Light Italic";
+    src: url("/fonts/Roboto-LightItalic.ttf") format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Thin";
+    src: url("/fonts/Roboto-Thin.ttf") format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Thin Italic";
+    src: url("/fonts/Roboto-ThinItalic.ttf") format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto Medium";
+    src: url("/fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Roboto";
+    src: url("/fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-gBlue font-gPage text-black transition-all duration-500;
+  }
+
+  h1 {
+    @apply font-gTitle;
+  }
+
+  main {
+    @apply grid grow items-start;
+    h1 {
+      @apply text-5xl;
+    }
+    h2 {
+      @apply text-3xl;
+    }
+  }
+
+  #root {
+    @apply flex h-screen flex-col;
+  }
+}
+
+@layer components {
+  .svgFile {
+    @apply w-[24px];
+  }
+
+  .iconLink {
+    @apply flex items-center  justify-center gap-2 odd:w-[24px_1fr] even:grid-cols-[1fr_24px];
+  }
+  h3 {
+    .iconLink,
+    .svgFile {
+      @apply w-[48px];
+    }
+  }
+}
+
+@layer utilities {
+}
