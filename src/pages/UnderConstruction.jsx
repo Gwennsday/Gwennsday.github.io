@@ -48,7 +48,7 @@ const UnderConstruction = () => {
         </h3>
         <h3>
           <PageLink
-            href="https://www.youtube.com/@gwennsday"
+            to="https://www.youtube.com/@gwennsday"
             target="_blank"
             className="h-[100%] rounded-lg bg-gPurple p-1 text-gBlue"
           >
