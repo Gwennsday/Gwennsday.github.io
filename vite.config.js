@@ -6,5 +6,5 @@ import eslint from "vite-plugin-eslint";
 export default defineConfig({
   // plugins: [react(), eslint()],
   plugins: [react(), eslint()],
-  base: '/'
+  base: "/gwennsday.github.io/",
 });
