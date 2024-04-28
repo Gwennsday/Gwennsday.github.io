@@ -16,7 +16,7 @@ const UnderConstruction = () => {
         <span className="animate-pulse text-gPurple">You</span> are far, far
         from <span className="animate-pulse text-gPurple">normal</span>!
       </h1>
-      <h2>And soon a far, far from nomal website will be here...</h2>
+      <h2>And soon a far, far from normal website will be here...</h2>
       <h3>While you wait for the website, check me on:</h3>
       <Grid className="mx-auto mt-5 flex w-[75%] items-center justify-around gap-3">
         <h3>
