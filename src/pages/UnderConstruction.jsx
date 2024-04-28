@@ -1,16 +1,10 @@
 import { Grid } from "@mui/material";
 
-import {
-  faSnapchat,
-  faSnapchatGhost,
-  faTiktok,
-  faTwitch,
-  faYoutube,
-} from "@fortawesome/free-brands-svg-icons";
+import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { mdiSnapchat, mdiTwitch, mdiYoutube } from "@mdi/js";
 
-import PageLink from "../ui/LinkIcon";
-import FaIcon from "../ui/FaIcon";
+import PageLink from "../ui/IconLink";
+import FaIcon from "../ui/IconCustom";
 
 const UnderConstruction = () => {
   return (
@@ -42,6 +36,7 @@ const UnderConstruction = () => {
             <FaIcon svgFile={mdiTwitch} />
           </PageLink>
         </h3>
+
         <h3>
           <PageLink
             to="https://www.snapchat.com/add/gwennsday?share_id=IRLkFUwW0B4&locale=en-US"

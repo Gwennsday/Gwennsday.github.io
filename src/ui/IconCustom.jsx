@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 import { forwardRef } from "react";
 import SvgIcon from "@mui/material/SvgIcon";
 import Icon from "@mdi/react";
+import { Grid } from "@mui/material";
 
 const CustomIcon = forwardRef((props, ref) => {
   const { icon, ...other } = props;
@@ -21,21 +22,27 @@ const CustomIcon = forwardRef((props, ref) => {
     </SvgIcon>
   );
 });
-CustomIcon.displayName = "FaIcon";
+CustomIcon.displayName = "IconCustom";
 CustomIcon.propTypes = {
   icon: PropTypes.any.isRequired,
 };
 
-const FaIcon = ({ svgFile, icon, className = "", ...props }) => {
+const IconCustom = ({ svgFile, icon, className = "", children, ...props }) => {
   return (
     <>
       {svgFile ? (
-        <Icon className="svgFile" path={svgFile} {...props} />
+        <Grid container className="flex w-full items-center gap-2">
+          <Icon className="svgFile" path={svgFile} {...props} />{" "}
+          {children && <strong>{children}</strong>}
+        </Grid>
       ) : (
-        <CustomIcon icon={icon} className={` ${className}`} {...props} />
+        <Grid container className="flex w-fit items-center gap-2">
+          <CustomIcon icon={icon} className={` ${className}`} {...props} />{" "}
+          {children && <strong>{children}</strong>}
+        </Grid>
       )}
     </>
   );
 };
 
-export default FaIcon;
+export default IconCustom;
