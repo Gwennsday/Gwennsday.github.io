@@ -17,6 +17,7 @@ export default {
         gPurple: {
           DEFAULT: "#612f9d",
           light: "#c08ec1",
+          dark: "#400D72",
         },
         gBlue: {
           DEFAULT: "#78b8f1",
@@ -26,6 +27,9 @@ export default {
           light: "#dedede",
           dark: "#1b1c1d",
         },
+      },
+      boxShadow: {
+        gShadow: "#1b1c1d 0 0 5px",
       },
     },
   },

@@ -129,13 +129,28 @@
     box-sizing: border-box;
     outline: none;
     scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      @apply h-[8px] w-[8px]  bg-transparent;
+    }
+    &::-webkit-scrollbar-thumb {
+      @apply bg-gPurple;
+    }
+    & .customScrollBar {
+      &::-webkit-scrollbar {
+        @apply bg-gPurple-dark h-[8px] w-[8px] rounded-br-lg rounded-tr-lg;
+      }
+      &::-webkit-scrollbar-thumb {
+        @apply rounded-br-lg rounded-tr-lg bg-gPurple-light;
+      }
+    }
   }
   body {
     @apply bg-gBlue font-gPage text-black transition-all duration-500;
   }
 
-  h1 {
-    @apply font-gTitle;
+  h1,
+  h2 {
+    @apply text-gPurple-dark font-gTitle;
   }
 
   main {

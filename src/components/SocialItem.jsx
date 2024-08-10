@@ -1,27 +1,18 @@
 import {
   Accordion,
-  AccordionSummary,
   AccordionDetails,
+  AccordionSummary,
   Grid,
-  useMediaQuery,
 } from "@mui/material";
 import FaIcon from "../ui/IconCustom";
-import { useEffect, useState } from "react";
 
 const SocialItem = ({ icon, svgFile, title, children }) => {
-  const matchWidth = useMediaQuery("(min-width: 1000px)");
-  const [isDefaultExpanded, setIsDefaultExpandaded] = useState(matchWidth);
-  useEffect(() => {
-    matchWidth && setIsDefaultExpandaded((cur) => !cur);
-  }, [matchWidth]);
-
   return (
     <Accordion
-      className="border border-solid  border-gPurple bg-gBlue"
-      defaultExpanded={isDefaultExpanded}
+      className="last:!rounded-br-none-none border border-solid border-gPurple bg-gBlue first-of-type:!rounded-tr-none"
       disableGutters
     >
-      <AccordionSummary className=" bg-gPurple">
+      <AccordionSummary className=" bg-gPurple first-of-type:!rounded-tr-none last-of-type:!rounded-br-none">
         <Grid
           container
           className="grid grid-cols-[auto_1fr] items-center justify-start gap-3 text-gGray-light"
