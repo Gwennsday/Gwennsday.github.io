@@ -1,4 +1,4 @@
-import { Grid, Avatar } from "@mui/material";
+import { Grid2 as Grid, Avatar } from "@mui/material";
 
 const Logo = () => {
   return (

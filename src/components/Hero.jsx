@@ -1,4 +1,4 @@
-import { Divider, Grid, useMediaQuery } from "@mui/material";
+import { Divider, Grid2 as Grid, useMediaQuery } from "@mui/material";
 import Logo from "./Logo";
 import VideoContainer from "./VideoContainer";
 import { startVideos } from "../constants/siteConstants";
@@ -21,7 +21,7 @@ const Hero = ({ className = "" }) => {
 
   return (
     <Grid
-      container
+      item
       className={`grid grid-cols-1 items-center justify-center gap-5 ${className} w-full bg-gPurple-dark p-5`}
     >
       <Grid
@@ -53,7 +53,7 @@ const Hero = ({ className = "" }) => {
         </Grid>
         <Grid
           item
-          className="mx-auto flex items-center justify-center lg:justify-start"
+          className="mx-auto flex items-center justify-center bg-red-500 lg:justify-start"
         >
           <VideoContainer
             videoSrc={startVideo.videoSrc}

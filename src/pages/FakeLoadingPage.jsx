@@ -1,5 +1,5 @@
-import { CircularProgress, Grid, LinearProgress } from "@mui/material";
-import { useEffect, useRef, useState } from "react";
+import { CircularProgress, Grid2 as Grid } from "@mui/material";
+import { useEffect, useState } from "react";
 
 const FakeLoadingPage = () => {
   const loadingText = [

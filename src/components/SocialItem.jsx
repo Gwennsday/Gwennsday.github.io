@@ -2,7 +2,7 @@ import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
-  Grid,
+  Grid2 as Grid,
 } from "@mui/material";
 import FaIcon from "../ui/IconCustom";
 

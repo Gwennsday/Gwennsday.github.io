@@ -1,6 +1,6 @@
 import { faDiscord } from "@fortawesome/free-brands-svg-icons";
 import { mdiCancel, mdiRss, mdiSnapchat, mdiTwitch, mdiYoutube } from "@mdi/js";
-import { Divider, Grid } from "@mui/material";
+import { Divider, Grid2 as Grid } from "@mui/material";
 import { Link } from "react-router-dom";
 import IconCustom from "../ui/IconCustom";
 import SocialItem from "./SocialItem";
@@ -23,8 +23,11 @@ const Social = () => {
           defaultExpanded
         >
           <span className="socialDescription">
-            After wacthing to some of my <Link>Twich Clips</Link>, are your
-            really going to gooffy out this whole gooffyness?
+            After wacthing to some of my{" "}
+            <Link to="https://www.twitch.tv/gwennsday" target="_blank">
+              Twitch
+            </Link>{" "}
+            clips, are your really going to gooffy out this whole gooffyness?
           </span>
         </SocialItem>
         <SocialItem
@@ -34,7 +37,7 @@ const Social = () => {
         >
           <span className="socialDescription">
             Check more goofy content on my{" "}
-            <Link to="" target="_blank">
+            <Link to="https://www.youtube.com/@gwennsday" target="_blank">
               YouTube
             </Link>{" "}
             channel
@@ -54,12 +57,22 @@ const Social = () => {
           title="Interact with me on my SnapChat"
         >
           <span className="socialDescription">
-            Join my <Link>SnapChat</Link> group
+            Join my{" "}
+            <Link
+              to="https://www.snapchat.com/add/gwennsday?share_id=IRLkFUwW0B4&locale=en-US"
+              target="_blank"
+            >
+              SnapChat
+            </Link>{" "}
+            group
           </span>
         </SocialItem>
         <SocialItem svgFile={mdiCancel} title="Exclusive only fans content!">
           <span className="socialDescription">
-            Ha! Made you look here, just to find out my <Link>TikTok</Link>{" "}
+            Ha! Made you look here, just to find out my{" "}
+            <Link to="https://www.tiktok.com/@gwennsdayttv" target="_blank">
+              TikTok
+            </Link>{" "}
             profile, which was made for my fans!
           </span>
         </SocialItem>

@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid2 as Grid } from "@mui/material";
 
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { mdiSnapchat, mdiTwitch, mdiYoutube } from "@mdi/js";
@@ -23,7 +23,7 @@ const UnderConstruction = () => {
           <PageLink to="https://www.tiktok.com/@gwennsdayttv" target="_blank">
             <FaIcon
               icon={faTiktok}
-              className=" h-[48px] w-[48px] rounded-lg bg-gPurple p-2 text-gBlue"
+              className="h-[48px] w-[48px] rounded-lg bg-gPurple p-2 text-gBlue"
             />
           </PageLink>
         </h3>
