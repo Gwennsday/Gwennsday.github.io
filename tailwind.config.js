@@ -14,6 +14,9 @@ export default {
         screen: "100dvh",
       },
       colors: {
+        gPink: {
+          DEFAULT: "#ae2e9c",
+        },
         gPurple: {
           DEFAULT: "#612f9d",
           light: "#c08ec1",

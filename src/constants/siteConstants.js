@@ -9,19 +9,19 @@ const videoList = [
     videoSrc: "./videos/tw_clip_01.webm",
     description: "I was definitelly talking about Star Wars here...",
     height: 258,
-    orientation: "vertical",
+    orientation: "portrait",
   },
   {
     videoSrc: "./videos/tw_clip_02.webm",
     description: "You didn't see it, but my shorts were falling... ",
     height: 258,
-    orientation: "vertical",
+    orientation: "portrait",
   },
   {
     videoSrc: "./videos/tw_clip_03.webm",
     description: 'The life of the "Two storke wonder"',
     height: 258,
-    orientation: "vertical",
+    orientation: "portrait",
   },
 ];
 
@@ -29,12 +29,12 @@ const startVideos = [
   {
     videoSrc: "./videos/raid_video_01.webm",
     height: 240,
-    orientation: "vertical",
+    orientation: "paisage",
   },
   {
     videoSrc: "./videos/raid_video_02.webm",
     height: 240,
-    orientation: "vertical",
+    orientation: "paisage",
   },
 ];
 

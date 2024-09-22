@@ -8,8 +8,6 @@ const VideoItem = ({
   height,
   orientation,
 }) => {
-  // console.log({ position, videoSrc, description, height, orientation });
-
   return (
     <>
       {position === "left" && (
@@ -26,8 +24,13 @@ const VideoItem = ({
               autoPlay={false}
             />
           </Grid>
-          <Grid item className="flex grow items-center justify-center">
-            {description}
+          <Grid
+            item
+            className="flex max-w-[75%] grow items-center justify-center"
+          >
+            <span className="!text-wrap font-gTitle font-bold">
+              {description}
+            </span>
           </Grid>
         </Grid>
       )}
@@ -36,8 +39,13 @@ const VideoItem = ({
           container
           className="flex items-center justify-center gap-3 !text-center"
         >
-          <Grid item className="flex grow items-center justify-center">
-            {description}
+          <Grid
+            item
+            className="flex max-w-[75%] grow items-center justify-center"
+          >
+            <span className="!text-wrap font-gTitle font-bold">
+              {description}
+            </span>
           </Grid>
           <Grid item className="flex grow items-center justify-center">
             <VideoContainer
@@ -50,23 +58,6 @@ const VideoItem = ({
           </Grid>
         </Grid>
       )}
-      {/* {position === "right" && (
-        <Grid
-          container
-          className="flex items-center justify-center gap-3 !text-center"
-        >
-          <Grid item className="flex grow items-center justify-center">
-            {description}
-          </Grid>
-          <Grid item className="flex grow items-center justify-center">
-            <VideoContainer
-              videoSrc={videoSrc}
-              height={height}
-              orientation={orientation}
-            />
-          </Grid>
-        </Grid>
-      )} */}
     </>
   );
 };

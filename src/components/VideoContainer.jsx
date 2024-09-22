@@ -5,7 +5,7 @@ const VideoContainer = ({ videoSrc, height, orientation, ...props }) => {
 
   const iframeWidth = (value) => {
     switch (value) {
-      case "vertical":
+      case "portrait":
         return (iframeHeight * 9) / 16;
       case "square":
         return iframeHeight;
@@ -13,12 +13,6 @@ const VideoContainer = ({ videoSrc, height, orientation, ...props }) => {
         return (iframeHeight * 16) / 9;
     }
   };
-
-  console.log({
-    videoSrc,
-    width: iframeWidth(orientation),
-    height: iframeHeight,
-  });
 
   const {
     muted = true,
@@ -30,7 +24,7 @@ const VideoContainer = ({ videoSrc, height, orientation, ...props }) => {
   return (
     <Card
       style={{ width: iframeWidth(orientation) }}
-      className="shadow-gShadow rounded-lg border-none"
+      className="rounded-lg border-none shadow-gShadow"
     >
       <CardMedia
         src={videoSrc}
