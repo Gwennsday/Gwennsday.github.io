@@ -53,7 +53,7 @@ const Hero = ({ className = "" }) => {
         </Grid>
         <Grid
           item
-          className="mx-auto flex items-center justify-center bg-red-500 lg:justify-start"
+          className="mx-auto flex items-center justify-center lg:justify-start"
         >
           <VideoContainer
             videoSrc={startVideo.videoSrc}
