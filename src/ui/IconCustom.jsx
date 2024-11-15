@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { forwardRef } from "react";
 import SvgIcon from "@mui/material/SvgIcon";
 import Icon from "@mdi/react";
-import { Grid } from "@mui/material";
+import { Grid2 as Grid } from "@mui/material";
 
 const CustomIcon = forwardRef((props, ref) => {
   const { icon, ...other } = props;

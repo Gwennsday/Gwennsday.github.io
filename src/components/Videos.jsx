@@ -1,10 +1,10 @@
-import { Divider, Grid } from "@mui/material";
-import { videoList } from "../constants/siteConstants";
-import VideoItem from "./VideoItem";
-import IconCustom from "../ui/IconCustom";
 import { mdiVideo } from "@mdi/js";
-import { Suspense, useEffect, useState } from "react";
+import { Divider, Grid2 as Grid } from "@mui/material";
+import { useEffect, useState } from "react";
+import { videoList } from "../constants/siteConstants";
 import { getClips } from "../services";
+import IconCustom from "../ui/IconCustom";
+import VideoItem from "./VideoItem";
 
 const Videos = () => {
   const [displayClips, setDisplayClips] = useState([]);
@@ -22,14 +22,11 @@ const Videos = () => {
         Videos, clips and more...
       </h2>
       <Divider className="-mt-2 h-fit bg-gPurple/50" />
-      <Grid
-        item
-        className="customScrollBar flex h-[380px] flex-col gap-4 overflow-hidden overflow-y-auto rounded-lg border border-solid border-gPurple p-4"
-      >
+      <Grid className="customScrollBar flex h-[380px] flex-col gap-4 overflow-hidden overflow-y-auto rounded-lg border border-solid border-gPurple p-4">
         {displayClips.map((video, i) => {
           const { videoSrc, description, orientation } = video;
           return i % 2 === 0 ? (
-            <Grid item key={i}>
+            <Grid key={i}>
               <VideoItem
                 videoSrc={videoSrc}
                 description={description}
@@ -39,7 +36,7 @@ const Videos = () => {
               />
             </Grid>
           ) : (
-            <Grid item key={i}>
+            <Grid key={i}>
               <VideoItem
                 videoSrc={videoSrc}
                 description={description}
@@ -53,7 +50,7 @@ const Videos = () => {
         {videoList.map((video, i) => {
           const { videoSrc, description, height, orientation } = video;
           return i % 2 === 0 ? (
-            <Grid item key={i}>
+            <Grid key={i}>
               <VideoItem
                 videoSrc={videoSrc}
                 description={description}
@@ -63,7 +60,7 @@ const Videos = () => {
               />
             </Grid>
           ) : (
-            <Grid item key={i}>
+            <Grid key={i}>
               <VideoItem
                 videoSrc={videoSrc}
                 description={description}

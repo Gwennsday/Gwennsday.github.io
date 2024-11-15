@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid2 as Grid } from "@mui/material";
 import VideoContainer from "./VideoContainer";
 
 const VideoItem = ({
@@ -15,7 +15,7 @@ const VideoItem = ({
           container
           className="flex items-center justify-center gap-3 !text-center"
         >
-          <Grid item className="flex grow items-center justify-center">
+          <Grid className="flex grow items-center justify-center">
             <VideoContainer
               videoSrc={videoSrc}
               height={height}
@@ -24,10 +24,7 @@ const VideoItem = ({
               autoPlay={false}
             />
           </Grid>
-          <Grid
-            item
-            className="flex max-w-[75%] grow items-center justify-center"
-          >
+          <Grid className="flex max-w-[75%] grow items-center justify-center">
             <span className="!text-wrap font-gTitle font-bold">
               {description}
             </span>
@@ -39,15 +36,12 @@ const VideoItem = ({
           container
           className="flex items-center justify-center gap-3 !text-center"
         >
-          <Grid
-            item
-            className="flex max-w-[75%] grow items-center justify-center"
-          >
+          <Grid className="flex max-w-[75%] grow items-center justify-center">
             <span className="!text-wrap font-gTitle font-bold">
               {description}
             </span>
           </Grid>
-          <Grid item className="flex grow items-center justify-center">
+          <Grid className="flex grow items-center justify-center">
             <VideoContainer
               videoSrc={videoSrc}
               height={height}

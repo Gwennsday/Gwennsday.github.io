@@ -6,7 +6,14 @@ import {
 } from "@mui/material";
 import FaIcon from "../ui/IconCustom";
 
-const SocialItem = ({ icon, svgFile, title, children, defaultExpanded }) => {
+const SocialItem = ({
+  icon,
+  svgFile,
+  reactIcon,
+  title,
+  children,
+  defaultExpanded,
+}) => {
   return (
     <Accordion
       className="last:!rounded-br-none-none border border-solid border-gPurple-dark bg-gBlue first-of-type:!rounded-tr-none"
@@ -26,6 +33,7 @@ const SocialItem = ({ icon, svgFile, title, children, defaultExpanded }) => {
               />
             )}
             {svgFile && <FaIcon svgFile={svgFile} size={1.3} />}
+            {reactIcon}
           </Grid>
           <Grid item>
             <p className="font-gTitle text-2xl font-bold text-gGray-light">

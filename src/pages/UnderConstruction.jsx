@@ -1,10 +1,8 @@
-import { Grid2 as Grid } from "@mui/material";
-
 import { faTiktok } from "@fortawesome/free-brands-svg-icons";
 import { mdiSnapchat, mdiTwitch, mdiYoutube } from "@mdi/js";
-
-import PageLink from "../ui/IconLink";
+import { Grid2 as Grid } from "@mui/material";
 import FaIcon from "../ui/IconCustom";
+import PageLink from "../ui/IconLink";
 
 const UnderConstruction = () => {
   return (

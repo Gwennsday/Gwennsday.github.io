@@ -37,7 +37,7 @@ const FakeLoadingPage = () => {
       container
       className="grid h-full grid-flow-row items-center justify-center gap-5 text-center"
     >
-      <Grid item className="flex flex-col items-center justify-center">
+      <Grid className="flex flex-col items-center justify-center">
         <h1 className="py-3">
           <span className="animate-pulse text-gPurple">You</span> are far, far
           from <span className="animate-pulse text-gPurple">normal</span>...

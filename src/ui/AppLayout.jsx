@@ -1,11 +1,11 @@
-import { Outlet } from "react-router-dom";
-import Main from "./Main";
-import Header from "./Header";
-import Footer from "./Footer";
-import Hero from "../components/Hero";
+import { Fade, Paper } from "@mui/material";
 import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import Hero from "../components/Hero";
 import FakeLoadingPage from "../pages/FakeLoadingPage";
-import { Fade, Grid, Grow, Paper } from "@mui/material";
+import Footer from "./Footer";
+import Header from "./Header";
+import Main from "./Main";
 
 const AppLayout = () => {
   const [fakeLoader, setFakeLoader] = useState(true);
@@ -17,10 +17,10 @@ const AppLayout = () => {
 
   return (
     <Fade in={fakeLoader === false} timeout={1000}>
-      <Paper className="flex flex-col">
+      <Paper className="flex grow flex-col">
         <Header />
         <Hero />
-        <Main className="bg-gBlue">
+        <Main>
           <Outlet />
         </Main>
         <Footer />

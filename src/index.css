@@ -34,16 +34,16 @@
     @apply font-gTitle text-gPurple-dark;
   }
   main {
-    @apply grid grow items-start;
+    @apply grid !grow items-start bg-gBlue;
     h1 {
-      @apply text-5xl;
+      @apply text-3xl md:text-5xl;
     }
     h2 {
-      @apply text-3xl;
+      @apply text-xl md:text-3xl;
     }
   }
   #root {
-    @apply flex h-screen flex-col;
+    @apply flex h-screen flex-col bg-red-500;
   }
 }
 
@@ -51,20 +51,32 @@
   .svgFile {
     @apply w-[24px];
   }
-
   .iconLink {
     @apply flex items-center justify-center gap-2 odd:w-[24px_1fr] even:grid-cols-[1fr_24px];
   }
   h3 {
     .iconLink,
     .svgFile {
-      @apply w-[48px];
+      @apply w-[30px];
     }
   }
   .socialDescription {
     @apply font-bold;
     & a {
       @apply text-gPink no-underline hover:text-gGray-dark hover:underline;
+    }
+  }
+
+  .MuiDialog-root {
+    @apply bg-gPurple-light/50 backdrop-blur-md;
+  }
+  .MuiDialog-paper {
+    @apply bg-gBlue text-xl font-extrabold shadow-gShadow;
+    & button {
+      @apply bg-gPurple font-extrabold text-gGray-light hover:bg-gPurple-dark;
+    }
+    & a {
+      @apply bg-gPurple-dark font-extrabold text-gGray-light hover:bg-gPink;
     }
   }
 }

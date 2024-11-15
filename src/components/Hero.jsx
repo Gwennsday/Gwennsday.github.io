@@ -33,22 +33,42 @@ const Hero = ({ className = "" }) => {
             item
             className="flex flex-col items-center justify-center gap-3"
           >
-            <Logo />
-            <h1 className="text-center text-5xl font-extrabold text-gGray-light">
-              It's Gwennsday, my dudes!
-            </h1>
-            <h2 className="text-center font-gTitle text-3xl text-gGray-light">
-              and I wish you a happy Gwennsday!
-            </h2>
+            <Grid className="grid grid-cols-[auto_1fr] items-center">
+              <Logo />
+              <Grid>
+                <h1 className="text-center text-5xl font-extrabold text-gGray-light">
+                  It's Gwennsday, my dudes!
+                </h1>
+                <h2 className="text-center font-gTitle text-3xl text-gGray-light">
+                  and I wish you a happy Gwennsday!
+                </h2>
+              </Grid>
+            </Grid>
             <Divider className="my-2 w-[50%] bg-gGray-light/50" />
-            <p className="text-center text-gGray-light">
-              I am a variety streamer who loves to do a bunch of different
-              activities.
-            </p>
-            <p className="text-center text-gGray-light">
-              I like survival games, fps games, and many more! I sew, cook,
-              crochet, and do goofy activities!
-            </p>
+            <Grid>
+              <p className="text-gGray-light">
+                Hey! Nice to meet you! 👋 I am a variety streamer who loves to
+                do a bunch of different activities.
+              </p>
+              <p className="text-gGray-light">
+                ✨ I like survival games, fps games, and many more! I sew, cook,
+                crochet, and do goofy activities!
+              </p>
+              <p className="text-gGray-light">
+                🍽🧶💃🧵 I have been streaming since December 2021 and I love
+                growing my community and
+                <br /> having fun with my internet friends!
+              </p>
+              <p className="text-gGray-light">
+                {" "}
+                💜 I have a potty mouth, and say what comes to my mind before I
+                think about it.
+              </p>
+              <p className="text-gGray-light">
+                🤷‍♀️ Be prepared for bad humor and poor puns as I cannot help
+                myself.
+              </p>
+            </Grid>
           </Grid>
         </Grid>
         <Grid

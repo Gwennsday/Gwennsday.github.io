@@ -41,9 +41,6 @@ const VideoContainer = ({ videoSrc, height, orientation, ...props }) => {
       <CardMedia
         src={videoSrc}
         component="video"
-        // style={{
-        //   height: iframeHeight,
-        // }}
         className="rounded-lg border-none shadow-md"
         muted={muted}
         controls={controls}
