@@ -43,7 +43,7 @@
     }
   }
   #root {
-    @apply flex h-screen flex-col bg-red-500;
+    @apply flex h-screen flex-col;
   }
 }
 
