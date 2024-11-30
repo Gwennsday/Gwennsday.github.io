@@ -3,6 +3,7 @@ import Logo from "./Logo";
 import VideoContainer from "./VideoContainer";
 import { startVideos } from "../constants/siteConstants";
 import { useEffect, useState } from "react";
+import RainButton from "./EmotesButton";
 
 const Hero = ({ className = "" }) => {
   const [startVideo, setStartVideo] = useState({});
@@ -16,24 +17,16 @@ const Hero = ({ className = "" }) => {
       return video;
     };
     setStartVideo(video());
-    // video();
   }, []);
 
   return (
     <Grid
-      item
       className={`grid grid-cols-1 items-center justify-center gap-5 ${className} w-full bg-gPurple-dark p-5`}
     >
-      <Grid
-        item
-        className="flex w-[100%] flex-col items-center justify-center gap-10 lg:mx-auto lg:w-[80%] lg:flex-row"
-      >
-        <Grid item className="flex flex-col items-center justify-center gap-3">
-          <Grid
-            item
-            className="flex flex-col items-center justify-center gap-3"
-          >
-            <Grid className="grid grid-cols-[auto_1fr] items-center">
+      <Grid className="flex w-[100%] flex-col items-center justify-center gap-10 lg:mx-auto lg:w-[80%] lg:flex-row">
+        <Grid className="flex flex-col items-center justify-center gap-3">
+          <Grid className="flex flex-col items-center justify-center gap-3">
+            <Grid className="grid items-center lg:grid-cols-[auto_1fr]">
               <Logo />
               <Grid>
                 <h1 className="text-center text-5xl font-extrabold text-gGray-light">
@@ -71,10 +64,7 @@ const Hero = ({ className = "" }) => {
             </Grid>
           </Grid>
         </Grid>
-        <Grid
-          item
-          className="mx-auto flex items-center justify-center lg:justify-start"
-        >
+        <Grid className="mx-auto flex items-center justify-center lg:justify-start">
           <VideoContainer
             videoSrc={startVideo.videoSrc}
             // height={startVideo.height}
@@ -85,6 +75,7 @@ const Hero = ({ className = "" }) => {
           />
         </Grid>
       </Grid>
+      <RainButton />
     </Grid>
   );
 };

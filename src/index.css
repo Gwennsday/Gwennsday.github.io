@@ -27,7 +27,7 @@
     }
   }
   body {
-    @apply bg-gBlue font-gPage text-black transition-all duration-500;
+    @apply overflow-hidden bg-gBlue font-gPage text-black transition-all duration-500;
   }
   h1,
   h2 {
@@ -43,7 +43,7 @@
     }
   }
   #root {
-    @apply flex h-screen flex-col;
+    @apply flex h-screen flex-col overflow-y-auto;
   }
 }
 

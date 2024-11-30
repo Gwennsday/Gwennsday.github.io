@@ -9,9 +9,6 @@ const Copyright = () => {
       container
       className="flex flex-col items-center justify-center text-xs text-gGray-light opacity-75"
     >
-      <div className="content-center">
-        All creation rights reserved &bull; (2024 - {year})
-      </div>
       <div className="flex content-center gap-1">
         Website created by
         <Link
@@ -22,6 +19,7 @@ const Copyright = () => {
           von Schappler
         </Link>
       </div>
+      <div className="content-center">&copy; {year}</div>
     </Grid>
   );
 };

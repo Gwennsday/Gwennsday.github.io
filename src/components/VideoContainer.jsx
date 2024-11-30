@@ -6,22 +6,10 @@ const VideoContainer = ({ videoSrc, height, orientation, ...props }) => {
   const iframeWidth = (value) => {
     switch (value) {
       case "portrait":
-        console.table({
-          real: (iframeHeight * 9) / 16,
-          changed: (iframeHeight * 0.85 * 9) / 16,
-        });
         return (iframeHeight * 9 * 0.9) / 16;
       case "square":
-        console.table({
-          real: iframeHeight,
-          changed: iframeHeight * 0.9,
-        });
         return iframeHeight * 0.85;
       default:
-        console.table({
-          real: (iframeHeight * 9) / 16,
-          changed: (iframeHeight * 0.9 * 9) / 16,
-        });
         return (iframeHeight * 16 * 0.85) / 9;
     }
   };

@@ -25,7 +25,7 @@ const SocialItem = ({
           container
           className="grid grid-cols-[auto_1fr] items-center justify-start gap-3 text-gGray-light"
         >
-          <Grid item>
+          <Grid>
             {icon && (
               <FaIcon
                 icon={icon}
@@ -35,7 +35,7 @@ const SocialItem = ({
             {svgFile && <FaIcon svgFile={svgFile} size={1.3} />}
             {reactIcon}
           </Grid>
-          <Grid item>
+          <Grid>
             <p className="font-gTitle text-2xl font-bold text-gGray-light">
               {title}
             </p>

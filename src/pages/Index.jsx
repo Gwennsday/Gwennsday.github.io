@@ -7,7 +7,7 @@ const Index = () => {
   return (
     <Grid className="grid h-[100%] grid-flow-row items-start gap-5">
       <Grid className="mx-auto grid w-[90%] grow grid-cols-1 justify-center gap-6 transition-all duration-300 lg:w-[85%] lg:grid-cols-[1fr_1px_1fr]">
-        <Grid item className="items-center justify-center">
+        <Grid className="items-center justify-center">
           <NavLink id="videos" hidden></NavLink>
           <Videos />
         </Grid>

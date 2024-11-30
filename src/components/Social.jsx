@@ -30,10 +30,7 @@ const Social = () => {
         My social links
       </h2>
       <Divider className="-mt-2 h-fit bg-gPurple-dark/50" />
-      <Grid
-        item
-        className="customScrollBar overflow-y-auto rounded-lg bg-gPurple-dark lg:max-h-[380px]"
-      >
+      <Grid className="customScrollBar overflow-y-auto rounded-lg bg-gPurple-dark lg:max-h-[380px]">
         <SocialItem
           title="Hangout with me on my streams..."
           reactIcon={<SiTwitch size={25} />}
@@ -76,7 +73,14 @@ const Social = () => {
             >
               me
             </Link>{" "}
-            always with you!
+            always with you. Ah, you can also pay your taxes using my{" "}
+            <Link
+              to="https://www.paypal.com/donate/?hosted_button_id=32HVE684HNKAU"
+              target="_blank"
+            >
+              tip jar
+            </Link>
+            !
           </span>
         </SocialItem>
         <SocialItem
@@ -92,7 +96,6 @@ const Social = () => {
             follow or a view!
           </span>
         </SocialItem>
-
         <SocialItem reactIcon={<SiDiscord size={25} />} title="Join the fam!">
           <span className="socialDescription">
             Check the{" "}
