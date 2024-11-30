@@ -8,24 +8,24 @@ import Header from "./Header";
 import Main from "./Main";
 
 const AppLayout = () => {
-  // const [fakeLoader, setFakeLoader] = useState(true);
-  // useEffect(() => {
-  //   setTimeout(() => setFakeLoader(false), 10000);
-  // }, []);
+  const [fakeLoader, setFakeLoader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => setFakeLoader(false), 10000);
+  }, []);
 
-  // if (fakeLoader) return <FakeLoadingPage />;
+  if (fakeLoader) return <FakeLoadingPage />;
 
   return (
-    // <Fade in={fakeLoader === false} timeout={1000}>
-    <Paper className="flex grow flex-col">
-      <Header />
-      <Hero />
-      <Main>
-        <Outlet />
-      </Main>
-      <Footer />
-    </Paper>
-    // </Fade>
+    <Fade in={fakeLoader === false} timeout={1000}>
+      <Paper className="flex grow flex-col">
+        <Header />
+        <Hero />
+        <Main>
+          <Outlet />
+        </Main>
+        <Footer />
+      </Paper>
+    </Fade>
   );
 };
 
