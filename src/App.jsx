@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
-import UnderConstruction from "./pages/UnderConstruction";
+// import UnderConstruction from "./pages/UnderConstruction";
 import Index from "./pages/Index";
 
 const routes = createBrowserRouter([

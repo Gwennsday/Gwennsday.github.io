@@ -146,7 +146,7 @@ const Social = () => {
             profile, which was made for my fans!
           </span>
         </SocialItem>
-        <SocialItem svgFile={mdiCancel} title="Click here if dare...">
+        {/* <SocialItem svgFile={mdiCancel} title="Click here if dare...">
           <span className="socialDescription">
             Ha! Made you look here, just to find out my{" "}
             <Link role="button" onClick={handleOpen}>
@@ -154,7 +154,7 @@ const Social = () => {
             </Link>{" "}
             profile!
           </span>
-        </SocialItem>
+        </SocialItem> */}
       </Grid>
       <Confirmation open={isOpen} handleOpen={handleOpen} />
     </Grid>
