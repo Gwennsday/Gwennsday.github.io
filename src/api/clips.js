@@ -6,7 +6,7 @@ const baseURL =
 const get = async () => {
   const res = await conn.get(`${baseURL}`);
   const clips = res.data.data.map((clip) => {
-    console.log(clip);
+    // console.log(clip);
     const { title, clip_url, is_featured, thumbnail_url } = clip;
     return {
       title,

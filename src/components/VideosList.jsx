@@ -17,7 +17,7 @@ const VideosList = () => {
   const [ytList, setYtList] = useState(ytList_Desk);
 
   error && console.error({ error });
-  console.log(isTablet);
+  // console.log(isTablet);
 
   useEffect(() => {
     if (isTablet) {

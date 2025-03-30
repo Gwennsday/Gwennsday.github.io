@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 const Emotes = ({ setIsRaining, duration, mode, setMode, emotes }) => {
   const [width, setWidth] = useState(0);
-  console.log(emotes);
+  // console.log(emotes);
 
   useEffect(() => {
     setWidth(document.getElementById("root").clientWidth);

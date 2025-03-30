@@ -9,7 +9,7 @@ const conn = axios.create({
 conn.interceptors.response.use(
   (response) => response,
   (err) => {
-    console.log(err);
+    console.error(err);
     return Promise.reject(err);
   },
 );

@@ -9,7 +9,7 @@ const Hero = () => {
   const [startVideo, setStartVideo] = useState({});
   const isMobile = useMediaQuery("(max-width:601px)");
 
-  console.log(startVideo);
+  // console.log(startVideo);
 
   useEffect(() => {
     const video = () => {
