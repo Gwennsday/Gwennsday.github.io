@@ -1,8 +1,8 @@
-import { Link } from "react-router-dom";
+import { Link } from "@tanstack/react-router";
 
-const IconLink = ({ to, children, className = "" }) => {
+const IconLink = ({ to, children, ...props }) => {
   return (
-    <Link to={to} className={`iconLink ${className}`} target="_blank">
+    <Link to={to} className="icon-link" {...props}>
       {children}
     </Link>
   );

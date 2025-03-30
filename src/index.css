@@ -1,85 +1,115 @@
-@import "./fonts.css";
+@import "./assets/css/theme.css";
+@import "tailwindcss";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    scroll-behavior: smooth;
+* {
+  @apply m-0 box-border scroll-smooth p-0 outline-none;
+  &::-webkit-scrollbar {
+    @apply h-[8px] w-[8px] bg-transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    @apply bg-g-purple;
+  }
+  & .customScrollBar {
     &::-webkit-scrollbar {
-      @apply h-[8px] w-[8px] bg-transparent;
+      @apply bg-g-purple-dark h-[8px] w-[8px] rounded-tr-lg rounded-br-lg;
     }
     &::-webkit-scrollbar-thumb {
-      @apply bg-gPurple;
-    }
-    & .customScrollBar {
-      &::-webkit-scrollbar {
-        @apply h-[8px] w-[8px] rounded-br-lg rounded-tr-lg bg-gPurple-dark;
-      }
-      &::-webkit-scrollbar-thumb {
-        @apply rounded-br-lg rounded-tr-lg bg-gPurple-light;
-      }
+      @apply bg-g-purple-light rounded-tr-lg rounded-br-lg;
     }
   }
-  body {
-    @apply overflow-hidden bg-gBlue font-gPage text-black transition-all duration-500;
-  }
-  h1,
-  h2 {
-    @apply font-gTitle text-gPurple-dark;
-  }
-  main {
-    @apply grid !grow items-start bg-gBlue;
-    h1 {
-      @apply text-3xl md:text-5xl;
-    }
-    h2 {
-      @apply text-xl md:text-3xl;
-    }
-  }
-  #root {
+}
+body {
+  @apply bg-g-blue font-g-page text-g-black overflow-hidden transition-all duration-500;
+  & #root {
     @apply flex h-screen flex-col overflow-y-auto;
-  }
-}
+    & .page {
+      @apply bg-g-blue;
+    }
+    & h1,
+    & h2 {
+      @apply font-g-title text-g-purple-dark text-3xl md:text-5xl;
+    }
+    & h2 {
+      @apply text-xl md:text-3xl;
+      & .icon,
+      & .svg-file {
+        @apply h-[35px] w-[35px];
+      }
+    }
+    & h3 {
+      @apply text-lg md:text-xl;
+      & .icon,
+      & .svg {
+        @apply h-[25px] w-[25px];
+      }
+    }
+    & header {
+      @apply bg-g-purple font-g-title text-g-gray-light sticky top-0 transition-all duration-300;
+      & a {
+        @apply flex h-full items-center gap-1 px-3 transition-all duration-300;
+        &:hover {
+          @apply bg-g-gray-light text-g-purple-dark;
+        }
+      }
+      &.inverted {
+        @apply bg-g-purple-light/25 backdrop-blur-lg;
+      }
+    }
+    & main {
+      @apply bg-g-blue mb-5 flex !grow flex-col items-start justify-start gap-10;
+      & section {
+        @apply !mx-auto !w-[80%];
+      }
+    }
+    & footer {
+      @apply bg-g-purple-dark text-g-blue grid w-full gap-3 px-3 py-5;
+    }
+    & #hero {
+      @apply bg-g-purple-dark text-g-gray-light flex w-full flex-col !items-center justify-center gap-10 p-5 lg:flex-row;
+      & h1,
+      & h2 {
+        @apply text-g-gray-light;
+      }
+    }
+    & .svg-file {
+      @apply w-[24px];
+    }
+    & .icon-link {
+      @apply flex items-center justify-center gap-2 odd:w-[24px_1fr] even:grid-cols-[1fr_24px];
+    }
 
-@layer components {
-  .svgFile {
-    @apply w-[24px];
-  }
-  .iconLink {
-    @apply flex items-center justify-center gap-2 odd:w-[24px_1fr] even:grid-cols-[1fr_24px];
-  }
-  h3 {
-    .iconLink,
-    .svgFile {
-      @apply w-[30px];
+    & .social-description {
+      @apply font-bold;
+      & a {
+        @apply text-g-pink hover:text-g-gray no-underline hover:underline;
+      }
     }
   }
-  .socialDescription {
-    @apply font-bold;
-    & a {
-      @apply text-gPink no-underline hover:text-gGray-dark hover:underline;
-    }
+  & .MuiDialog-root {
+    @apply bg-g-purple-light/50 backdrop-blur-md;
   }
-
-  .MuiDialog-root {
-    @apply bg-gPurple-light/50 backdrop-blur-md;
-  }
-  .MuiDialog-paper {
-    @apply bg-gBlue text-xl font-extrabold shadow-gShadow;
+  & .MuiDialog-paper {
+    @apply bg-g-blue shadow-g-shadow text-xl font-extrabold;
     & button {
-      @apply bg-gPurple font-extrabold text-gGray-light hover:bg-gPurple-dark;
+      @apply bg-g-purple text-g-gray-light hover:bg-g-purple-dark font-extrabold;
     }
     & a {
-      @apply bg-gPurple-dark font-extrabold text-gGray-light hover:bg-gPink;
+      @apply bg-g-purple-dark text-g-gray-light hover:bg-g-pink font-extrabold;
     }
   }
-}
-
-@layer utilities {
+  & .MuiDialog-root {
+    @apply bg-g-purple-light/50 backdrop-blur-md;
+  }
+  & .MuiDialog-paper {
+    @apply bg-g-blue shadow-g-shadow text-xl font-extrabold;
+    & button {
+      @apply bg-g-purple text-g-gray-light hover:bg-g-purple-dark font-extrabold;
+    }
+    & a {
+      @apply bg-g-purple-dark text-g-gray-light hover:bg-g-pink font-extrabold;
+    }
+  }
+  & .MuiCardHeader-title {
+    @apply !font-g-title;
+  }
 }

@@ -1,24 +1,16 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import AppLayout from "./ui/AppLayout";
-// import UnderConstruction from "./pages/UnderConstruction";
-import Index from "./pages/Index";
-
-const routes = createBrowserRouter([
-  {
-    element: <AppLayout />,
-
-    children: [
-      {
-        path: "/",
-        // element: <UnderConstruction />,
-        element: <Index />,
-      },
-    ],
-  },
-]);
+import queryClient from "@api/queryClient";
+import router from "@routes/router";
+import { QueryClientProvider } from "@tanstack/react-query";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { RouterProvider } from "@tanstack/react-router";
 
 function App() {
-  return <RouterProvider router={routes} />;
+  return (
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools initialIsOpen={false} />
+      <RouterProvider router={router} />
+    </QueryClientProvider>
+  );
 }
 
 export default App;

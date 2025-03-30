@@ -1,0 +1,1 @@
+- [ ] Improve animations emojis

@@ -7,7 +7,7 @@ const Emotes = ({ setIsRaining, duration, mode, setMode, emotes }) => {
 
   useEffect(() => {
     setWidth(document.getElementById("root").clientWidth);
-  }, [document]);
+  }, []);
 
   const PARENT_VARIANTS = {
     hidden: { opacity: 1 },
@@ -39,7 +39,7 @@ const Emotes = ({ setIsRaining, duration, mode, setMode, emotes }) => {
 
   return (
     <motion.div
-      className="pointer-events-none absolute left-0 top-0 z-10 flex h-full w-full items-center"
+      className="pointer-events-none absolute top-0 left-0 z-10 flex h-full w-full items-center"
       variants={PARENT_VARIANTS}
       initial="hidden"
       animate={["visible"]}

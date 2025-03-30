@@ -1,0 +1,21 @@
+@import "./fonts.css";
+
+@theme {
+  --page: "Roboto", sans-serif;
+  --title: "FingerPaint", sans-serif;
+  --color-g-black: #1b1c1d;
+  --color-g-blue: #78b8f1;
+  --color-g-gray: #666666;
+  --color-g-gray-light: #dedede;
+  --color-g-pink: #ae2e9c;
+  --color-g-purple: #612f9d;
+  --color-g-purple-light: #c08ec1;
+  --color-g-purple-dark: #400d72;
+  --height-screen: 100dvh;
+  --shadow-g-shadow: #1b1c1d 0 0 5px;
+}
+
+@theme inline {
+  --font-g-page: var(--page);
+  --font-g-title: var(--title);
+}

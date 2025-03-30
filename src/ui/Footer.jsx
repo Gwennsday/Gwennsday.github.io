@@ -1,29 +1,27 @@
-import { Divider, Grid2 as Grid } from "@mui/material";
-import Copyright from "../components/Copyright";
-import { Link } from "react-router-dom";
+import Copyright from "@components/Copyright";
+import { Divider, Grid } from "@mui/material";
+import { Link } from "@tanstack/react-router";
 
 const Footer = () => {
   return (
-    <footer className="grid w-full gap-3 bg-gPurple-dark px-3 py-5 text-gBlue">
+    <footer id="contact">
       <Grid>
-        <p className="font-gTitle text-xl">Wanna talk business?</p>
-        <p className="text-sm text-gGray-light">
-          I'm opened to business contact on my
+        <p className="font-g-title text-xl">Wanna talk business?</p>
+        <p className="text-g-gray-light text-sm">
+          I'm opened to business contact on my {""}
           <Link
             to={
               "mailto:pagan.princess5352@googlemail.com?subject=Business%20Inquiries%20-%20Twitch"
             }
             target="_blank"
-            className="font-bold text-gBlue no-underline hover:underline hover:underline-offset-2"
+            className="text-g-blue font-bold no-underline hover:underline hover:underline-offset-2"
           >
-            {" "}
             e-mail
           </Link>
           !
         </p>
       </Grid>
-
-      <Divider className="w-full bg-gGray-light/50" />
+      <Divider className="bg-g-gray-light/50 w-full" />
       <Copyright />
     </footer>
   );
