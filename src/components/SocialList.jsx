@@ -28,7 +28,7 @@ const SocialList = () => {
   return (
     <Grid>
       <Accordion
-        title="Handgout with me on my streams..."
+        title="Hangout with me on my streams..."
         icon={<IconCustom icon={faTwitch} />}
       >
         <span className="social-description">
@@ -36,7 +36,7 @@ const SocialList = () => {
           <Link to="https://www.twitch.tv/gwennsday" target="_blank">
             Twitch
           </Link>{" "}
-          clips, are your really going to ignore this whole goofyness?
+          clips, are you really going to ignore this whole goofyness?
         </span>
       </Accordion>
       <Accordion
