@@ -1,0 +1,4 @@
+@utility text-stroke {
+  -webkit-text-stroke-width: 0.05px;
+  -webkit-text-stroke-color: var(--color-g-gray-dark, #f00);
+}

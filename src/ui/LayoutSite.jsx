@@ -10,6 +10,7 @@ import Main from "@ui/Main";
 import ScrollToHash from "@ui/ScrollToHash";
 import ScrollToTop from "@ui/ScrollToTop";
 import { useEffect, useState } from "react";
+import SupportButton from "./SupportButton";
 
 const LayoutSite = () => {
   const [fakeLoader, setFakeLoader] = useState(

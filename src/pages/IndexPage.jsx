@@ -2,9 +2,11 @@ import Hero from "@components/Hero";
 import IconCustom from "@components/IconCustom";
 import SocialList from "@components/SocialList";
 import VideosList from "@components/VideosList";
+import SETTINGS from "@constants/settings";
 import { faPlay, faRss } from "@fortawesome/free-solid-svg-icons";
 import { Divider, Grid } from "@mui/material";
 import Heading from "@ui/Heading";
+import SupportButton from "@ui/SupportButton";
 
 const IndexPage = () => {
   return (
@@ -26,6 +28,9 @@ const IndexPage = () => {
         <Divider className="bg-g-purple" />
         <SocialList />
       </Grid>
+      {!SETTINGS.isUnderConstruction && (
+        <SupportButton className="!top-0 left-4 !z-100000 !w-fit" />
+      )}
     </>
   );
 };

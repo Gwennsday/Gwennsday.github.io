@@ -29,7 +29,7 @@ const Hero = () => {
             <Logo />
             <Grid className="text-center">
               <Heading>It's Gwennsday my dudes!</Heading>
-              <Heading as="h2">and I wish you a happy Gewnnsday</Heading>
+              <Heading as="h2">and I wish you a happy Gwennsday</Heading>
             </Grid>
           </Grid>
           <Divider className="bg-g-gray-light/50 w-[50%]" variant="middle" />

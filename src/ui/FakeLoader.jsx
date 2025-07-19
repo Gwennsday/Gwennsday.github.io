@@ -1,6 +1,7 @@
 import { CircularProgress, Grid } from "@mui/material";
 import Heading from "@ui/Heading";
 import { useEffect, useState } from "react";
+import SupportButton from "./SupportButton";
 
 const loadingText = [
   "... and a far, far from normal website is being loaded",
@@ -35,6 +36,7 @@ const FakeLoader = () => {
       <Heading as="h2" className="pb-3">
         {text}
       </Heading>
+      <SupportButton className="!bg-g-purple-dark !relative" />
     </Grid>
   );
 };
